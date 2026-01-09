@@ -20,7 +20,7 @@ export default function Evidence() {
             visibleBars: 1
         },
         {
-            text: "Watching 1 hour of TV uses 4 gallons - 4x more than AI. This means 1 hour of TV uses about 120,000 ChatGPT queries.",
+            text: "Watching 1 hour of TV uses 4 gallons - 4x more than AI. This means 1 hour of TV uses about 1200 ChatGPT queries.",
             visibleBars: 2
         },
         {
