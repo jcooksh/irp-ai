@@ -1,0 +1,135 @@
+:root {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --accent-color: #3b82f6; /* A subtle blue */
+  --font-main: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(59, 130, 246, 0.3);
+}
+
+/* Scrollbar/premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em; /* Tight tracking for modern feel */
+}
+
+p {
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.section-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  position: relative;
+}
+
+/* ---------- Hero ---------- */
+
+.hero-content {
+  text-align: center;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2rem;
+}
+
+.hero-title {
+  font-size: clamp(2.75rem, 8vw, 6rem);
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 1.75rem;
+  color: #ffffff;
+}
+
+.hero-subtitle {
+  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+  color: #9ca3af;
+  max-width: 42rem;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-indicator-mouse {
+  width: 1.5rem;
+  height: 2.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-indicator-dot {
+  width: 0.25rem;
+  height: 0.5rem;
+  background: #ffffff;
+  border-radius: 9999px;
+  margin-top: 0.5rem;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  padding: 5rem 2rem;
+  text-align: center;
+  color: #4b5563;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.site-footer p {
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
