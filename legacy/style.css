@@ -1,0 +1,130 @@
+/* 1. RESET & BASIC SETUP */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Clean, modern font */
+    background-color: #f4f4f5; /* Very light grey for a clean look */
+    color: #18181b; /* Soft black for text */
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto; /* Centers the content */
+}
+
+/* 2. TYPOGRAPHY */
+.tag {
+    background-color: #e4e4e7;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #52525b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    letter-spacing: -1px; /* Tighter letters look more modern */
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #52525b;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #007BFF; /* Blue underline */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* 3. CARD DESIGN */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Animation: Card lifts up slightly */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box {
+    background: #eff6ff; /* Light blue background */
+    border-left: 4px solid #007BFF;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.stat-box h3 {
+    font-size: 2.5rem;
+    color: #007BFF;
+    margin-bottom: 5px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.bibliography {
+    margin-top: 50px;
+    border-top: 1px solid #d4d4d8;
+    padding-top: 20px;
+    color: #71717a;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #a1a1aa;
+}
+
+/* 4. ANIMATIONS (The "Nice" Part) */
+
+/* Define the animation: Slide Up and Fade In */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px); /* Start 30px lower */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at normal position */
+    }
+}
+
+/* Apply animation to header and sections */
+header, .card, .bibliography {
+    opacity: 0; /* Start invisible */
+    animation: fadeInUp 0.8s ease-out forwards; /* Run animation */
+}
+
+/* Stagger the animations so they don't all happen at once */
+.animate-delay-1 { animation-delay: 0.1s; }
+.animate-delay-2 { animation-delay: 0.3s; }
+.animate-delay-3 { animation-delay: 0.5s; }
+.animate-delay-4 { animation-delay: 0.7s; }
