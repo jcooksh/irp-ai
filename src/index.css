@@ -85,11 +85,7 @@ p {
   font-weight: 700;
   line-height: 1.05;
   margin-bottom: 1.75rem;
-  background-image: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.45));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
+  color: #ffffff;
 }
 
 .hero-subtitle {
